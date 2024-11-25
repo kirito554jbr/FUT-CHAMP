@@ -91,3 +91,20 @@
     display: block;
     opacity: 1;
 }
+
+
+.pitch {
+background-image: url("src/assets/img/https3A2F2Fcdn.png");
+height: 37.8rem;
+width: 55.7rem;
+
+}
+
+.pitch img {
+    height: 150px;
+}
+
+.pitch div {
+    height: 100px;
+    width: 200px;
+}
