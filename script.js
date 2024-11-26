@@ -50,3 +50,14 @@ multiple dropdown menus on the page work
         });
     }); 
 });
+
+
+
+
+// const choose = querySelector('.choose');
+
+
+// choose.addEventListener('click' => {
+
+
+// }
