@@ -61,3 +61,38 @@ multiple dropdown menus on the page work
 
 
 // }
+
+
+
+
+const hide = document.getElementById('hide');
+const show = document.getElementById('show');
+
+show.addEventListener('click', () => {
+    show.style.display = "none";
+    hide.style.display = "block";
+
+});
+
+
+
+// const AddedPlayers = {
+//     Player : {
+//         name : "Zlatan Ibrahimofich",
+//         photo : "",
+//         position : "ST",
+//         nationality : "Swedish",
+//         flag : "",
+//         club : "Ac Milan",
+//         logo : "",
+//         rating : "87",
+//         pace : "82",
+//         shooting : "95",
+//         passing : "83",
+//         dribbling : "84",
+//         defending : "45",
+//         physical : "86"
+
+//     }
+    
+// }

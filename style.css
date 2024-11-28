@@ -21,6 +21,7 @@
     background-image: url(src/assets/img/stadium_background.webp);
     background-repeat: no-repeat;
     background-size: 100%;
+    
 
 }
 
@@ -140,22 +141,47 @@ background-size: 100% 100%;
     width: 7.5em;
     height: auto;
     background-position: center;
+    background-color: transparent;
+    border: 0px;
 }
 
 .player-card:hover {
-    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+    filter: drop-shadow(10px 10px 20px rgba(5, 29, 67, 0.5));
+}    
+
+
+.P-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5em;
+    height: auto;
+    background-position: center;
+    background-color: transparent;
+    border: 0px;
 }
 
 
 
-.p-card {
-    background-image: url(src/assets/img/badge_ballon_dor.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 .position {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
+.form-input {
+    /* font-family: 'Roboto', sans-serif; */
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    background-color: rgba(13, 3, 29, 0.841);
+    border: none;
+    width: 100%;
+    border-bottom: 0.3rem solid transparent;
+    
+  }
+
+  .hide {
+    display: none;
+  }
