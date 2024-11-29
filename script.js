@@ -67,12 +67,401 @@ multiple dropdown menus on the page work
 
 const hide = document.getElementById('hide');
 const show = document.getElementById('show');
+const HideSubB = document.getElementById('hide-sub-b');
 
 show.addEventListener('click', () => {
     show.style.display = "none";
     hide.style.display = "block";
+    HideSubB.style.display = "none";
+
 
 });
+
+
+
+// fetch('players.json')
+// .then(response => response.json())
+// .then(APT => {
+
+//     const Legends = APT.players;
+//     const LegendPlace = document.getElementById('test');
+    
+//     console.log(Legends[0]);
+    
+//     Legends.forEach(Legend => {
+        
+        
+           
+            
+//         LegendPlace.innerHTML += `
+//                            <div class = "p-card">
+//                            <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+//                             <p class ="name-fixer">${Legend.name}</p>
+//                             <p class ="position-fixer"> ${Legend.position}</p>
+//                             <p class ="pace-fixer">PAC ${Legend.pace}</p>
+//                             <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+//                             <p class ="passing-fixer">PAS ${Legend.passing}</p>
+//                             <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+//                             <p class ="defending-fixer">DEF ${Legend.defending}</p>
+//                             <p class ="physical-fixer">PHY ${Legend.physical}</p>
+//                             <img src="${Legend.league}" alt="" class = "icons-fixer">
+//                             <img src="${Legend.logo}" alt="" class = "icons-fixer">
+//                             <img src="${Legend.nation}" alt="" class = "icons-fixer">
+//                             <div>
+//                         `;
+                        
+        
+        
+//     });
+
+// })
+
+
+function ChooseST(){
+    // Element.remove = 'p-card';
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "ST") {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+
+
+   function ChooseLW(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "LW") {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+function ChooseRW(){
+    // function CheckPosition(Json, position) {
+    //     return Json.filter((el) => el.position === position);
+    //   }
+    
+//  let Json = 
+ fetch('players.json')
+.then(response => response.json())
+.then(APT => {
+
+    const Legends = APT.players;
+    const LegendPlace = document.getElementById('test');
+    
+    console.log(Legends[0]);
+    LegendPlace.innerHTML = "";
+
+    Legends.forEach(Legend => {
+       
+                
+        if(Legend.position === "RW") {
+           
+            
+        LegendPlace.innerHTML += `
+                           <div class = "p-card">
+                           <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                            <p class ="name-fixer">${Legend.name}</p>
+                            <p class ="position-fixer"> ${Legend.position}</p>
+                            <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                            <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                            <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                            <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                            <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                            <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                            <img src="${Legend.league}" alt="" class = "icons-fixer">
+                            <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                            <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                            <div>
+                        `;
+                        
+        
+                    }
+    })
+
+})
+}
+
+
+function ChooseCM(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "CM" ) {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+
+   function ChooseLB(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "LB" ) {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+   
+function ChooseRB(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "RB" ) {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+
+   function ChooseCB(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "CB" ) {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+   
+function ChooseGK(){
+    fetch('players.json')
+   .then(response => response.json())
+   .then(APT => {
+   
+       const Legends = APT.players;
+       const LegendPlace = document.getElementById('test');
+       
+       console.log(Legends[0]);
+       LegendPlace.innerHTML = "";
+
+       Legends.forEach(Legend => {
+          
+                   
+           if(Legend.position === "GK" ) {
+              
+               
+           LegendPlace.innerHTML += `
+                              <div class = "p-card">
+                              <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
+                               <p class ="name-fixer">${Legend.name}</p>
+                               <p class ="position-fixer"> ${Legend.position}</p>
+                               <p class ="pace-fixer">PAC ${Legend.pace}</p>
+                               <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
+                               <p class ="passing-fixer">PAS ${Legend.passing}</p>
+                               <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
+                               <p class ="defending-fixer">DEF ${Legend.defending}</p>
+                               <p class ="physical-fixer">PHY ${Legend.physical}</p>
+                               <img src="${Legend.league}" alt="" class = "icons-fixer">
+                               <img src="${Legend.logo}" alt="" class = "icons-fixer">
+                               <img src="${Legend.nation}" alt="" class = "icons-fixer">
+                               <div>
+                           `;
+                           
+           
+                       }
+       })
+   
+   })
+   }
+
+
+
+
+
+
 
 
 

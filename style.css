@@ -185,3 +185,114 @@ background-size: 100% 100%;
   .hide {
     display: none;
   }
+
+  .sub {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .p-card{
+
+    background-image: url(src/assets/img/badge_gold.webp);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+
+}
+
+.test {
+    
+    width: 100%;
+}
+
+.image-fixer{
+
+    position: relative;
+    top: 33px;
+    left: 28px;
+    height: 100px;
+
+}
+
+.name-fixer {
+    font-size: small;
+    position: relative;
+    top: 33px;
+    left: 28px;
+
+}
+
+.position-fixer{
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+    
+}
+
+.rating-fixer {
+    position: relative;
+    bottom: 130px;
+    left: 20px;
+    font-size: larger;
+}
+.icons-fixer{
+    z-index: 999;
+    width: 9px;
+    position: relative;
+    bottom: 266px;
+    left: 58px;
+}
+
+.pace-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 25px;
+    left: 23px;
+}
+
+.shooting-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 68px;
+    left: 40px;
+}
+
+.passing-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 111px;
+    left: 60px;
+}
+
+.dribbling-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 154px;
+    left: 77px;
+}
+
+.defending-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 197px;
+    left: 95px;
+}
+
+.physical-fixer{
+    font-size: xx-small;
+    z-index: 999;
+    width: 10px;
+    position: relative;
+    bottom: 240px;
+    left: 113px;
+}
