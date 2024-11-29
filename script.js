@@ -10,57 +10,43 @@ dropdowns.forEach(dropdown => {
     const options = dropdown.querySelectorAll('.menu li');
     const selected = dropdown.querySelector('.selected');
 
-/* 
-We are using this method in order to have
-multiple dropdown menus on the page work 
-*/
 
 
 
-    //Add a click event to the select element
     select.addEventListener('click', () => {
 
-        //Add the clicked select styles to the select element
+    
         select.classList.toggle('select-clicked');
-        //Add the rotate styles to the caret element
+     
         caret.classList.toggle('caret-rotat');
-        //Add the open styles to the menu element
+       
         menu.classList.toggle('menu-open');
     });
 
-    //Loop through all option elements
+    
     options.forEach(option => {
-        //Add a click event to the option inner text
+      
         option.addEventListener('click', () => {
-            //change selected inner text to cliked option inner text
+            
             selected.innerText = option.innerText;
-            //Add the clicked select styles to the select element
+            
             select.classList.remove('select-clicked');
-            //Add the rotate styles to the caret element 
+             
             caret.classList.remove('caret-rotate');
-            //Add the open styles to the menu element
+            
             menu.classList.remove('menu-open');
-            //Remove active class from all option element
+            
             options.forEach(option => {
                 option.classList.remove('active');
             });
-            //Add active class to clicked option element
+            
             option.classList.add('active');
+            
 
         });
     }); 
 });
 
-
-
-
-// const choose = querySelector('.choose');
-
-
-// choose.addEventListener('click' => {
-
-
-// }
 
 
 
@@ -79,46 +65,10 @@ show.addEventListener('click', () => {
 
 
 
-// fetch('players.json')
-// .then(response => response.json())
-// .then(APT => {
-
-//     const Legends = APT.players;
-//     const LegendPlace = document.getElementById('test');
-    
-//     console.log(Legends[0]);
-    
-//     Legends.forEach(Legend => {
-        
-        
-           
-            
-//         LegendPlace.innerHTML += `
-//                            <div class = "p-card">
-//                            <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
-//                             <p class ="name-fixer">${Legend.name}</p>
-//                             <p class ="position-fixer"> ${Legend.position}</p>
-//                             <p class ="pace-fixer">PAC ${Legend.pace}</p>
-//                             <p class ="shooting-fixer">SHO ${Legend.shooting}</p>
-//                             <p class ="passing-fixer">PAS ${Legend.passing}</p>
-//                             <p class ="dribbling-fixer">DRI ${Legend.dribbling}</p>
-//                             <p class ="defending-fixer">DEF ${Legend.defending}</p>
-//                             <p class ="physical-fixer">PHY ${Legend.physical}</p>
-//                             <img src="${Legend.league}" alt="" class = "icons-fixer">
-//                             <img src="${Legend.logo}" alt="" class = "icons-fixer">
-//                             <img src="${Legend.nation}" alt="" class = "icons-fixer">
-//                             <div>
-//                         `;
-                        
-        
-        
-//     });
-
-// })
 
 
 function ChooseST(){
-    // Element.remove = 'p-card';
+    
     fetch('players.json')
    .then(response => response.json())
    .then(APT => {
@@ -135,7 +85,7 @@ function ChooseST(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchST(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -178,7 +128,7 @@ function ChooseST(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchLW(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -202,11 +152,6 @@ function ChooseST(){
    }
 
 function ChooseRW(){
-    // function CheckPosition(Json, position) {
-    //     return Json.filter((el) => el.position === position);
-    //   }
-    
-//  let Json = 
  fetch('players.json')
 .then(response => response.json())
 .then(APT => {
@@ -224,7 +169,7 @@ function ChooseRW(){
            
             
         LegendPlace.innerHTML += `
-                           <div class = "p-card">
+                           <div class = "p-card" onclick = "PlaceInPitchRW(this)">
                            <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                             <p class ="name-fixer">${Legend.name}</p>
                             <p class ="position-fixer"> ${Legend.position}</p>
@@ -266,7 +211,7 @@ function ChooseCM(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchCM(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -308,7 +253,7 @@ function ChooseCM(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchLB(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -350,7 +295,7 @@ function ChooseRB(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchRB(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -392,7 +337,7 @@ function ChooseRB(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchCB(this)">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -424,8 +369,8 @@ function ChooseGK(){
        const Legends = APT.players;
        const LegendPlace = document.getElementById('test');
        
-       console.log(Legends[0]);
-       LegendPlace.innerHTML = "";
+    //    console.log(Legends[0]);
+              LegendPlace.innerHTML = "";
 
        Legends.forEach(Legend => {
           
@@ -434,7 +379,7 @@ function ChooseGK(){
               
                
            LegendPlace.innerHTML += `
-                              <div class = "p-card">
+                              <div class = "p-card" onclick = "PlaceInPitchGK(this)" style ="z-index: 999;">
                               <img src="${Legend.photo}" class ="image-fixer" alt="${Legend.name}" >
                                <p class ="name-fixer">${Legend.name}</p>
                                <p class ="position-fixer"> ${Legend.position}</p>
@@ -460,10 +405,111 @@ function ChooseGK(){
 
 
 
+   
 
 
 
 
+
+   function PlaceInPitchGK(Player){
+    
+    
+    document.getElementById('GK').appendChild(Player);
+
+    
+  console.log(Player);
+  
+  
+  }
+
+
+function PlaceInPitchCB(Player){
+
+    
+    document.getElementById('CB').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+  
+function PlaceInPitchRB(Player){
+
+    
+    document.getElementById('RB').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+
+  
+function PlaceInPitchLB(Player){
+
+    
+    document.getElementById('LB').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+
+  
+function PlaceInPitchCM(Player){
+
+    
+    document.getElementById('CM').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+
+  
+function PlaceInPitchRW(Player){
+
+    
+    document.getElementById('RW').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+
+  
+function PlaceInPitchLW(Player){
+
+    
+    document.getElementById('LW').appendChild(Player);
+  console.log(Player);
+  
+  
+  }
+
+  
+function PlaceInPitchST(Player){
+    
+    
+    document.getElementById('ST').appendChild(Player);
+
+    
+  console.log(Player);
+  
+  
+  }
+
+
+
+
+
+
+    document.getElementById('4-3-3').style.display = "none";
+
+    function FormSwitch(){
+    if(document.getElementById('4-3-3').style.display === "none"){
+        document.getElementById('4-3-3').style.display = "block";
+        document.getElementById('4-4-2').style.display = "none";
+    }
+    else{
+        document.getElementById('4-3-3').style.display = "none";
+        document.getElementById('4-4-2').style.display = "block";
+    }
+}
 
 // const AddedPlayers = {
 //     Player : {
