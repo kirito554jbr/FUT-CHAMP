@@ -1,9 +1,9 @@
 const dropdowns = document.querySelectorAll('.dropdown');
 
-//loop through all dropdowns element
+
 dropdowns.forEach(dropdown => {
 
-    //Get inner element from each dropdown
+    
     const select = dropdown.querySelector('.select');
     const caret = dropdown.querySelector('.caret');
     const menu = dropdown.querySelector('.menu');
@@ -733,7 +733,7 @@ const PlayerAddedInModale = document.getElementById('test');
 
 
 
-PlayerAddedInModale.innerHTML = `                              
+PlayerAddedInModale.insertAdjacentHTML('beforeend',  `                              
                               <div class = "p-card" onclick="PlaceInPitchCB(this)" style ="z-index: 999;">
                               <img src="${PlayerImage}" class ="image-fixer" alt="${PlayerName}">
                               <p class ="rating-fixer">${PlayerOvr}</p>
@@ -750,6 +750,7 @@ PlayerAddedInModale.innerHTML = `
                                <img src="${PlayerNation}" alt="" class = "icons-fixer">
                                <div>
     `
+);
     console.log(PlayerAddedInModale.innerHTML);
 
 
