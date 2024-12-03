@@ -20,7 +20,8 @@
 .stade {
     background-image: url(src/assets/img/stadium_background.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     
 
 }
@@ -46,7 +47,6 @@
     border-radius: 0.5em;
     padding: 1em;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 .select-clicked {
@@ -65,7 +65,9 @@
     border-right: 5px solid transparent;
     border-top: 6px solid #fff;
     transition: 0.3s;
+    
 }
+
 
 .caret-rotate {
     transform: rotate(180deg);
@@ -130,16 +132,18 @@ background-size: 100% 100%;
 } */
 
 .player-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(src/assets/img/download.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 7.5em;
-    height: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-image: url(src/assets/img/download.webp); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;    
     background-position: center;
-    background-color: transparent;
+    background-color: red;
+    /* background-color: transparent; */
     border: 0px;
 }
 
@@ -152,7 +156,7 @@ background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7.5em;
+    width: 120px;
     height: auto;
     background-position: center;
     background-color: transparent;
@@ -215,21 +219,21 @@ background-size: 100% 100%;
 .name-fixer {
     font-size: small;
     position: relative;
-    top: 33px;
+    top: -15px;
     left: 28px;
 
 }
 
 .position-fixer{
     position: relative;
-    bottom: 70px;
+    bottom: 108px;
     left: 20px;
     
 }
 
 .rating-fixer {
     position: relative;
-    bottom: 130px;
+    bottom: 48px;
     left: 20px;
     font-size: larger;
 }
@@ -237,7 +241,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 9px;
     position: relative;
-    bottom: 266px;
+    bottom: 312px;
     left: 58px;
 }
 
@@ -246,7 +250,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 25px;
+    bottom: 72px;
     left: 23px;
 }
 
@@ -255,7 +259,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 68px;
+    bottom: 115px;
     left: 40px;
 }
 
@@ -264,7 +268,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 111px;
+    bottom: 158px;
     left: 60px;
 }
 
@@ -273,7 +277,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 154px;
+    bottom: 201px;
     left: 77px;
 }
 
@@ -282,7 +286,7 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 197px;
+    bottom: 244px;
     left: 95px;
 }
 
@@ -291,6 +295,8 @@ background-size: 100% 100%;
     z-index: 999;
     width: 10px;
     position: relative;
-    bottom: 240px;
+    bottom: 287px;
     left: 113px;
 }
+
+

@@ -11,39 +11,39 @@
 <body class="stade">
     <section class="mx-5 mt-5 row justify-content-around">
        
-        <div id="4-3-3" class="col-md-9 ">
+        <!-- <div id="4-3-3" class="col-md-9 ">
             <div class="pitch row justify-content-center">
               
                 <div class="row">
                     <div class="col d-flex justify-content-evenly">
-                        <a class="player-card" href="#players" onclick="ChooseLW()"> <button class="player-card" ><span><svg  viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                        <a class="player-card" href="#players" onclick="ChooseST()"> <button class="player-card"><span><svg viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                        <a class="player-card"  href="#players" onclick="ChooseRW()"> <button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
+                        <div class="player-card" onclick="ChooseLW()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> </div>
+                        <div class="player-card" onclick="ChooseST()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card"  onclick="ChooseRW()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> </div>
 
                     </div>
                     </div>
                     <div class="row">
                     <div class="col d-flex justify-content-around">
-                        <a class="player-card" href="#players" onclick="ChooseCM()"> <button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
-                        <a class="player-card" href="#players" onclick="ChooseCM()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
-                        <a class="player-card" href="#players" onclick="ChooseCM()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
+                        <div class="player-card" onclick="ChooseCM()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card" onclick="ChooseCM()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card" onclick="ChooseCM()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                     </div>
                     </div>
                     <div class="row">
                     <div class="col d-flex justify-content-around ">
-                        <a class="player-card" href="#players" onclick="ChooseLB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                        <a class="player-card" href="#players" onclick="ChooseCB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                        <a class="player-card" href="#players" onclick="ChooseCB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                        <a class="player-card" href="#players" onclick="ChooseRB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
+                        <div class="player-card"  onclick="ChooseLB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card" onclick="ChooseCB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card" onclick="ChooseCB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                        <div class="player-card" onclick="ChooseRB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                     </div>
                     </div>
                     <div class="row">
                     <div class="col d-flex justify-content-center" >
-                    <a class="player-card"  href="#players" id="GK" onclick="ChooseGK()"><button class="player-card " ><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
+                    <div class="player-card"  id="GK" onclick="ChooseGK()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                     </div>
                     </div>
 
-            </div>
+            </div> -->
             
          </div>
             <div id="4-4-2" class="col-md-9 ">
@@ -51,29 +51,30 @@
               
                     <div class="row">
                         <div class="col d-flex justify-content-evenly">
-                            <a class="player-card" href="#players" id="ST" onclick="ChooseST()"> <button class="player-card" ><span><svg  viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                            <a class="player-card" href="#players" id="ST" onclick="ChooseST()"> <button class="player-card"><span><svg viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a> 
+                            <div class="player-card" id="ST" onclick="ChooseST()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> </div>
+                            <div class="player-card" id="ST1" onclick="ChooseST1()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div> 
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class="col d-flex justify-content-around">
-                            <a class="player-card"  href="#players" id="CM" onclick="ChooseLM()"> <button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
-                            <a class="player-card" href="#players" id="CM" onclick="ChooseCM()"> <button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
-                            <a class="player-card" href="#players" id="CM" onclick="ChooseCM()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
-                            <a class="player-card" href="#players" id="CM" onclick="ChooseRM()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</button></a>
+                            <div class="player-card"  id="LW" onclick="ChooseLW()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> </div>
+                            <div class="player-card" id="CM" onclick="ChooseCM()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> </div>
+                            <div class="player-card" id="CM1" onclick="ChooseCM1()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                            <div class="player-card" id="RW" onclick="ChooseRW()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-around ">
-                            <a class="player-card" href="#players" id="LB" onclick="ChooseLB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                            <a class="player-card" href="#players" id="CB" onclick="ChooseCB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                            <a class="player-card" href="#players" id="CB" onclick="ChooseCB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
-                            <a class="player-card" href="#players" id="RB" onclick="ChooseRB()"><button class="player-card"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
+                            <div class="player-card" id="LB" onclick="ChooseLB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                            <div class="player-card" id="CB" onclick="ChooseCB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                            <div class="player-card" id="CB1" onclick="ChooseCB1()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
+                            <div class="player-card" id="RB" onclick="ChooseRB()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-center" >
-                            <a class="player-card"  href="#players" id="GK" onclick="ChooseGK()"><button class="player-card " id="removeGK"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button></a>
+                            <div class="player-card"  id="GK" onclick="ChooseGK()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></div>
                         </div>
                     </div>
 
@@ -139,55 +140,91 @@
                     <!-----------------------ADD PLAYER----------------------->
 
 
-                    <div class="hide" id="hide">
-                        
-                    
-                    
-                    <h5 class="mt-4" style="width: 120px;">Player Position</h5>
-                      <div><input class="form-input" type="text"  style="width: 60px;"></div>
-                      <h5 class="mt-4 " style="width: 120px;">Player Name</h5>
-                      <div><input class="form-input" type="text" style="width: 180px;"></div>
-                      <h5 class="mt-4" style="width: 120px;">Player Over</h5>
-                       <div><input type="number" name="" id="" class="mb-4 form-input" style="width: 100px;"></div>
-                       <div>
-                        <div class="d-flex flex-row">
-                           <h5 style="width: 60px;">PAC</h5>
-                           <h5 class="ms-3" style="width: 60px;">SHO</h5>
-                           <h5 class="ms-3" style="width: 60px;">PAS</h5>
+                                            
+                                                
+                        <!-- Modal -->
+                        <div class="modal fade" data-bs-theme="dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Add Player</h1>
+                                <button type="button" class="btn-close" id="x" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                <!-----------------------MODAL BODY----------------------->
+
+                                    <div class="hide" id="hide">
+                                    <h5 class="card-title text-light">Player Position</h5>
+                                    <div><input class="form-input form-control" id="player-position" type="text"  style="width: 60px;"></div>
+
+                                    <h5 class="mt-4 text-light " style="width: 120px;">Player Name</h5>
+                                    <div><input class="form-input form-control" id="player-name" type="text" style="width: 180px;"></div>
+
+                                    <h5 class="card-title text-light" >Player Image</h5>
+                                    <div><input type="url" id="player-image" name="homepage"></div>
+
+                                    <h5 class="mt-4 text-light" style="width: 120px;">Player Over</h5>
+                                    <div><input class="mb-4 form-input form-control" type="number" name="" id="player-over"  style="width: 100px;"></div>
+
+
+                                    
+                                    <div>
+                                    <div class="d-flex flex-row">
+                                        <h5 class="text-light" style="width: 60px;">PAC</h5>
+                                        <h5 class="ms-3 text-light" style="width: 60px;">SHO</h5>
+                                        <h5 class="ms-3 text-light" style="width: 60px;">PAS</h5>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <input  class="form-input form-control" type="number" name="" id="player-pac" style="width: 60px;">
+                                        <input class="form-input ms-3 form-control" type="number" name="" id="player-sho" style="width: 60px;">
+                                        <input class="form-input ms-3 form-control" type="number" name="" id="player-pas" style="width: 60px;">
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <h5 class="text-light" style="width: 60px;">DRI</h5>
+                                        <h5 class="ms-3 text-light" style="width: 60px;">DEF</h5>
+                                        <h5 class="ms-3 text-light" style="width: 60px;">PHY</h5>
+                                    </div>
+                                    <div class="d-flex flex-row mb-4">
+                                        <input class="form-input form-control" type="number" name="" id="player-dri" style="width: 60px;">
+                                        <input class="form-input ms-3 form-control" type="number" name="" id="player-def" style="width: 60px;">
+                                        <input class="form-input ms-3 form-control" type="number" name="" id="player-phy" style="width: 60px;">
+                                    </div>
+                                    </div> 
+                                    
+                                        
+                                        <h5 class="card-title text-light">Player League</h5>
+                                        <div><input type="url" id="player-league" name="homepage"></div>
+
+
+                                        <h5 class="card-title text-light">Player Club</h5> </div>
+                                        
+                                        <div><input type="url" id="club-logo" name="homepage"></div>
+                                        
+                                        <h5 class="card-title text-light">Player Nation</h5>
+                                        <div><input type="url" id="player-nation"  name="homepage"></div>
+
+                                        
+
+
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" id="close" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="add-player"  class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="d-flex flex-row">
-                            <input  class="form-input" type="number" name="" id="" style="width: 60px;">
-                            <input class="form-input ms-3" type="number" name="" id="" style="width: 60px;">
-                            <input class="form-input ms-3" type="number" name="" id="" style="width: 60px;">
-                        </div>
-                        <div class="d-flex flex-row">
-                            <h5 style="width: 60px;">DRI</h5>
-                            <h5 class="ms-3" style="width: 60px;">DEF</h5>
-                            <h5 class="ms-3" style="width: 60px;">PHY</h5>
-                         </div>
-                        <div class="d-flex flex-row mb-4">
-                            <input class="form-input" type="number" name="" id="" style="width: 60px;">
-                            <input class="form-input ms-3" type="number" name="" id="" style="width: 60px;">
-                            <input class="form-input ms-3" type="number" name="" id="" style="width: 60px;">
-                        </div>
-                        </div> 
-                       
-                            <h5 class="card-title">Player Nation</h5>
-                            <div><input class="form-input my-2" type="text" style="width: 180px;"></div>
-                            <h5 class="card-title">Player League</h5>
-                            <div><input class="form-input my-2" type="text" style="width: 180px;"></div>
-                            <h5 class="card-title">Player Club</h5>
-                            <div><input class="form-input my-2" type="text" style="width: 180px;"></div>
-                        </div>
+                     
 
                         <div class="d-flex flex-row justify-content-center" >
                             <div id="show" >
-                                <button class="P-card" onclick=""><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button>
+                                <button class="P-card" onclick="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><span><svg class="" viewBox="0 0 36 42" fill="none" width="36" ><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button>
                             </div>    
-                            <div id="hide-sub-b">
+                            <!-- <div id="hide-sub-b">
                                 <button class="P-card" onclick=""><span><svg class="" viewBox="0 0 36 42" fill="none" width="36"><path d="M18.6275 41.711L18.3137 41.0298C18.1146 41.1215 17.8854 41.1215 17.6863 41.0298L17.3726 41.711L17.6863 41.0298L1.18627 33.4311C0.920355 33.3087 0.75 33.0427 0.75 32.7499V8.7248C0.75 8.42506 0.928458 8.15411 1.20383 8.03575L17.7038 0.943648C17.8929 0.862375 18.1071 0.862375 18.2962 0.943648L34.7962 8.03575C35.0715 8.15411 35.25 8.42506 35.25 8.7248V32.7499C35.25 33.0427 35.0796 33.3087 34.8137 33.4311L18.3137 41.0298L18.6275 41.711Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><div class="position-absolute fs-3 mb-1">+</div></button>
 
-                            </div>
+                            </div> -->
                          </div>
 
 
@@ -199,12 +236,36 @@
         </div>
     </div>
 </section>
+
+                    <!-----------------------SUB PLAYERS----------------------->
+
 <section id="players" class="d-flex mt-5" style=" width: 770px;" >
-    <h5 class="m-3" style="color: #ffffff;;">Substitutions</h5>
-    <div id="test" class="test d-flex flex-md-row flex-wrap">
+   
+      <!-- Modal -->
+      <div class="modal fade"  data-bs-theme="dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="m-3 colo text-light" >Substitutions</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="test" class="test d-flex flex-md-row flex-wrap">
 
 
-    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+    
+    
 </section>
 
 <script src="script.js"></script>
